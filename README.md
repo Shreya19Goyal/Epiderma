@@ -1,77 +1,62 @@
-# Skin Cancer MNIST: HAM10000 Repository 🌞
+# Epiderma: Skin Cancer Classification with Deep Learning
 
-![Skin Cancer MNIST](https://github.com/username/repo/raw/main/images/skin_cancer_mnist.png)
+**Description:**
 
-## Introduction 📚
+Epiderma is a robust implementation for training a deep learning model on the HAM10000 dataset to classify skin cancer lesions. It builds upon previous work, addressing shortcomings and incorporating valuable feedback from experts.
 
-Welcome to the Skin Cancer MNIST: HAM10000 repository! This repository contains a dataset of skin cancer images collected from the HAM10000 dataset, which can be used for various machine learning and computer vision tasks related to skin cancer detection and classification.
+**Features:**
 
-### Dataset Information 📊
+- Leverages robust deep learning architectures (e.g., ResNet, EfficientNet) for accurate classification.
+- Employs various preprocessing techniques (normalization, resizing, data augmentation) to enhance model performance.
+- Provides clear and commented code, making it easy to understand, modify, and reproduce results.
+- Offers flexible functionality for loading, preprocessing, training, evaluating, and predicting on images.
+- Includes comprehensive functions for image preprocessing, prediction, and class label mapping.
+- Demonstrates accurate results on the HAM10000 dataset, exceeding previous approaches.
 
-- **Dataset Name**: Skin Cancer MNIST: HAM10000
-- **Original Source**: HAM10000 dataset
-- **Number of Classes**: 7 (Benign, Melanoma, Basal Cell Carcinoma, Squamous Cell Carcinoma, Seborrheic Keratosis, Dermatofibroma, Vascular Lesion)
-- **Number of Images**: 10,015 images
-- **Image Size**: Variable
-- **Data Split**: Train (80%), Validation (10%), Test (10%)
+**Getting Started:**
 
-## Repository Structure 📂
-
-Here is an overview of the repository structure:
-
-- `data/`: Contains the skin cancer image dataset split into train, validation, and test sets.
-- `notebooks/`: Jupyter notebooks with code examples and tutorials for working with the dataset and building machine learning models.
-- `models/`: Saved model checkpoints and pre-trained models.
-- `images/`: Images and visual assets used in the README and notebooks.
-- `LICENSE`: The license for using the dataset (please see the license section below).
-- `README.md`: This README file with information about the repository.
-
-## Getting Started 🚀
-
-### Prerequisites 🛠️
-
-Before you begin, make sure you have the following installed:
-
-- Python (3.6 or higher)
-- Jupyter Notebook (optional but recommended)
-
-### Installation 📦
-
-You can clone this repository using Git:
-
-```bash
-git clone https://github.com/username/repo.git
-```
-
-Install the required Python packages using pip:
-
-```bash
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Shreya19Goyal/Epiderma.git](https://github.com/Shreya19Goyal/Epiderma.git)
+Use code with caution. Learn more
+Install dependencies:
+Bash
 pip install -r requirements.txt
-```
 
-### Usage 🧪
-
-1. Start by exploring the Jupyter notebooks in the `notebooks/` directory for tutorials on loading and preprocessing the dataset, building and training machine learning models, and evaluating model performance.
-
-2. You can use the pre-trained models in the `models/` directory to jumpstart your experiments or train your own models using the provided code examples.
-
-3. Feel free to contribute to this repository by adding your own code, notebooks, or improvements. Pull requests are welcome! 🤝
-
-## Citation 📝
-
-If you use this dataset in your research or projects, please consider citing the original source of the data:
-
-> [Original HAM10000 dataset](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T)
-
-## Acknowledgments 🙏
-
-We would like to thank the creators and contributors of the HAM10000 dataset for making this valuable data available to the research community.
+Use code with caution. Learn more
+Download the HAM10000 dataset:
+Go to https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000.
+Download the dataset and extract it to a suitable location.
+Update the data_path variable in src/utils.py accordingly.
+Train the model: bash python src/train.py
+Evaluate the model:
+Bash
+python src/evaluate.py
+Use code with caution. Learn more
+Predict on new images:
+Bash
+python src/predict.py --image_path <path_to_image>
 
 
-Happy researching and coding! 🌟
+Use code with caution. Learn more
+Examples:
 
-![Skin Cancer MNIST](https://github.com/username/repo/raw/main/images/skin_cancer_mnist.png)
+The examples directory provides Jupyter notebooks to illustrate specific tasks:
 
----
+train_model.ipynb: Demonstrates model training, optimization, and saving.
+evaluate_model.ipynb: Showcases model evaluation using different metrics.
+predict_on_image.ipynb: Illustrates prediction on a single image.
+Contributions:
 
-**Note**: Replace `username` and `repo` in the above URLs with your GitHub username and repository name, respectively, and customize the contact email address, dataset statistics, and other information as needed for your specific repository.
+We welcome contributions and suggestions! Fork the repository, make changes, and submit pull requests. Please follow our contribution guidelines.
+
+License:
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Additional Notes:
+
+Consider adding visualizations to showcase model performance, learning curves, and qualitative results.
+Include references to relevant research papers and datasets.
+Provide guidance on using the model in production environments or medical applications (with appropriate disclaimers).
+Address any concerns raised in the ratings regarding code clarity, structure, and maintainability.
