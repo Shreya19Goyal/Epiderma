@@ -41,7 +41,7 @@ To use Epiderma for skin cancer classification:
 
 ## Results
 
-Epiderma achieves promising results in skin cancer classification, with accuracy exceeding XX%. The model's performance is validated on a separate test set, demonstrating its efficacy in real-world scenarios.
+Epiderma achieves promising results in skin cancer classification, with accuracy exceeding 96%. The model's performance is validated on a separate test set, demonstrating its efficacy in real-world scenarios.
 
 ## Acknowledgments
 
