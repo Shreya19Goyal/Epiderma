@@ -1,62 +1,57 @@
-# Epiderma: Skin Cancer Classification with Deep Learning
+# Epiderma: Skin Cancer Classification with CNN
 
-**Description:**
+## Introduction
 
-Epiderma is a robust implementation for training a deep learning model on the HAM10000 dataset to classify skin cancer lesions. It builds upon previous work, addressing shortcomings and incorporating valuable feedback from experts.
+Epiderma is a deep learning project aimed at classifying skin cancer images into different categories using Convolutional Neural Networks (CNNs). The dataset used for training is HAM10000, which comprises images of various types of skin lesions. This project is beneficial for dermatologists and medical practitioners in accurately diagnosing skin cancer at an early stage.
 
-**Features:**
+## Dataset
 
-- Leverages robust deep learning architectures (e.g., ResNet, EfficientNet) for accurate classification.
-- Employs various preprocessing techniques (normalization, resizing, data augmentation) to enhance model performance.
-- Provides clear and commented code, making it easy to understand, modify, and reproduce results.
-- Offers flexible functionality for loading, preprocessing, training, evaluating, and predicting on images.
-- Includes comprehensive functions for image preprocessing, prediction, and class label mapping.
-- Demonstrates accurate results on the HAM10000 dataset, exceeding previous approaches.
+The HAM10000 dataset consists of 10015 dermatoscopic images, categorized into 7 classes:
 
-**Getting Started:**
+1. Actinic keratoses and intraepithelial carcinomae (akiec)
+2. Basal cell carcinoma (bcc)
+3. Benign keratosis-like lesions (bkl)
+4. Dermatofibroma (df)
+5. Melanoma (mel)
+6. Melanocytic nevi (nv)
+7. Vascular lesions (vasc)
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Shreya19Goyal/Epiderma.git](https://github.com/Shreya19Goyal/Epiderma.git)
-Use code with caution. Learn more
-Install dependencies:
-Bash
-pip install -r requirements.txt
+Each image is accompanied by metadata, including lesion type and patient information.
 
-Use code with caution. Learn more
-Download the HAM10000 dataset:
-Go to https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000.
-Download the dataset and extract it to a suitable location.
-Update the data_path variable in src/utils.py accordingly.
-Train the model: bash python src/train.py
-Evaluate the model:
-Bash
-python src/evaluate.py
-Use code with caution. Learn more
-Predict on new images:
-Bash
-python src/predict.py --image_path <path_to_image>
+## Model Architecture
+
+Epiderma employs a CNN architecture for image classification. The model is trained on a subset of the HAM10000 dataset, optimizing for accuracy and generalization. Key components of the model include:
+
+- Convolutional layers for feature extraction
+- Pooling layers for dimensionality reduction
+- Fully connected layers for classification
+- Dropout layers for regularization
+
+The model is trained using TensorFlow and Keras libraries, enabling efficient computation and seamless integration with other deep learning tools.
+
+## Usage
+
+To use Epiderma for skin cancer classification:
+
+1. Clone the repository: `git clone https://github.com/Shreya19Goyal/Epiderma.git`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Download the pre-trained model: [Model Link]([https://your_model_link.h5](https://github.com/Shreya19Goyal/Epiderma/blob/main/model.h5))
+4. Run the prediction script: `python predict.py --image_path <path_to_image>`
 
 
-Use code with caution. Learn more
-Examples:
+## Results
 
-The examples directory provides Jupyter notebooks to illustrate specific tasks:
+Epiderma achieves promising results in skin cancer classification, with accuracy exceeding XX%. The model's performance is validated on a separate test set, demonstrating its efficacy in real-world scenarios.
 
-train_model.ipynb: Demonstrates model training, optimization, and saving.
-evaluate_model.ipynb: Showcases model evaluation using different metrics.
-predict_on_image.ipynb: Illustrates prediction on a single image.
-Contributions:
+## Acknowledgments
 
-We welcome contributions and suggestions! Fork the repository, make changes, and submit pull requests. Please follow our contribution guidelines.
+- Kaggle for providing the HAM10000 dataset
+- Open-source contributors for libraries and tools used in the project
 
-License:
+## Contact
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+For inquiries or suggestions, feel free to contact the project maintainer at goyalshreya1908@gmail.com. Contributions and feedback are always welcome!
 
-Additional Notes:
+---
 
-Consider adding visualizations to showcase model performance, learning curves, and qualitative results.
-Include references to relevant research papers and datasets.
-Provide guidance on using the model in production environments or medical applications (with appropriate disclaimers).
-Address any concerns raised in the ratings regarding code clarity, structure, and maintainability.
+Feel free to customize this README according to your project specifics. Good luck with your project, and happy coding!
